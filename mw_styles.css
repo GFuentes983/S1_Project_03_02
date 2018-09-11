@@ -4,6 +4,7 @@
     font-family: 'Century Gothic';
     src: url('Century Gothic.ttf') format('.toff');
 }
+ /* This is to import a font. */
 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
@@ -36,15 +37,12 @@
        background-color: rgb(208, 184, 109);
        padding: 5px 0px 5px 0px;
    }
-
+/* This sets up the background colors for sectioning elements and also has the padding, font and how the text will be aligned as center. */
 
 /* Heading Styles */
 h1, h2 {
     font-weight: normal;
 }
-
-
-
 
 /* Navigation Styles */
 
@@ -62,23 +60,23 @@ nav a:visited, nav a:link {
 nav a:hover, nav a:active {
     color: rgb(212, 35, 35);
 }
-
+/* This is for the navigation which is colored differently depending whether or not the text is being hovered so for the color that is being hovered or clicked on is a color of red. The link when visited or not clicked at all is a color of blue. */
 
 /* Article Styles */
 
-#tour_summary h1 {
+article#tour_summary h1 {
     font-size: 2.2em;
     letter-spacing: 0.2em;
 }
 
-#tour_summary p {
+article#tour_summary p {
     font-size: 1.1em; 
 }
 
-#tour_summary p:first-of-type::first-line {
+article#tour_summary p:first-of-type::first-line {
     font: 1.2em small-caps; 
 }
-
+/* This sets font size, small caps and spacing for elements in the article element that has an id of tour_summary. */
 /* Aside Styles */
 aside {
     text-align: left;
@@ -106,7 +104,7 @@ aside {
 #tour_itinerary h2:nth-of-type(even), #tour_itinerary p:nth-of-type(even) {
     color: rgb(81, 95, 175);
 }
-
+/* This makes changing colors and sizes for the itinerary by using pseudo classes which change the color for either every even or odd h2 and p elements and has set font sizes for each h1 or h2. */
 /* Blockquote Styles */
 
 blockquote {
@@ -117,3 +115,5 @@ blockquote {
 blockquote p {
     padding: 2.5px 10px 2.5px 10px;
 }
+
+/* This makes a small box of a blueish color with the text being white and within that has text padded by a certain number of pixels/ratio. */
